@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+header .logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+header .logo span {
+    color: orange;
+    font-size: 1.5em;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.5s;   
+}
+
+.content {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content h2 {
+    font-size: 6em;
+    color: #333;
+
+}
+
+.content h2 span {
+    color: orange;
+}
+
+.content p {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.button-row {
+    display: flex;
+    gap: 20px;
+
+}
+
+.content button {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button.chat {
+    background: transparent;
+    border: 1px solid orange;
+    color: #333;
+}
+
+button {
+    width: auto; /* Add this line */
+}
+
+.dayNight {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+
+.dayNight ion-icon:nth-child(2), .banner.night ion-icon:nth-child(1){
+    display: none;
+}
+
+.banner.night ion-icon:nth-child(2){
+    display: block;
+}
+
+.banner.night {
+    background-color: #333;
+}
+
+.banner.night header .logo,
+.banner.night header ul li a,
+.banner.night .content h2,
+.banner.night .content p {
+    color: white;
+}
+
+.banner.night .content button {
+    color: #333;
+}
+
+.banner.night button.chat {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+.banner.night .dayNight {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Path: landingPage/index.js */
+

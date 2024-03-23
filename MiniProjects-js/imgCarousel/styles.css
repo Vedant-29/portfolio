@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 182, 182);
+}
+
+.card-carousel {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    border-radius: 8px;
+    background-color: rgb(223, 222, 222);
+    box-shadow: 0 0 10px 0 rgba(83, 83, 83, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-carousel img{
+    height: 15vw;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .img-carousel img {
+        height: 30vw;
+    }
+}
+
+.img-carousel img:first-child {
+    display: block;
+}

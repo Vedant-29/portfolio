@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+}
+
+.category-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+}
+
+.category-btn.active {
+    background-color: #007BFF;
+}
+
+#product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.product-item {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease; /* Add a transition for hover effect */
+}
+
+.product-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Darken the shadow on hover */
+}
+
+.product-item h3 {
+    margin-top: 0; /* Remove the top margin */
+}
+
+.product-item p {
+    margin-bottom: 0; /* Remove the bottom margin */
+}
+
+.product-item[data-category="electronics"] {
+    background-color: #f0f8ff; /* Light blue */
+}
+
+.product-item[data-category="clothing"] {
+    background-color: #f5f5dc; /* Beige */
+}
+
+.product-item[data-category="home"] {
+    background-color: #e6e6fa; /* Lavender */
+}
