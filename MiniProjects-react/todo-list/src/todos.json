@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Learn React",
+    "desc": "React is a JavaScript library for building user interfaces.",
+    "completed": false
+  },
+  {
+    "id": "2",
+    "title": "Learn Redux",
+    "desc": "Redux is a predictable state container for JavaScript apps.",
+    "completed": false
+  },
+  {
+    "id": "3",
+    "title": "Learn TypeScript",
+    "desc": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.",
+    "completed": false
+  }
+]
