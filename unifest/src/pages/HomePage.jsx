@@ -103,7 +103,7 @@ function HomePage() {
               onClick={() => setActiveButton("This Weekend")}
             >
               This Weekend
-            </div>
+            </div>  
           </div>
           <div className="flex items-center">
             <Button variant="outline-secondary" className="m-1">
