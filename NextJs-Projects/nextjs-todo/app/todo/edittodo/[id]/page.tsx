@@ -47,7 +47,8 @@ export default function EditTodo({ params }: { params: any }) {
     fetchData();
   }, [id]);
 
-  const handleSumbit = async (e) => {
+  const handleSumbit = async (e:any) => {
+    e.preventDefault();
     try {
       const res = await fetch(`http://localhost:3000/api/topics/${id}` , {
         method: "PUT",
